@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#D38443</color>
+    <color name="colorPrimaryDark">#D38443</color>
+    <color name="colorPrimaryMoreLight">#f4a361</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="light_blue">#2174DE</color>
+    <color name="dark_green">#2E9100</color>
+    <color name="weight">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#F3A425</color>
+    <color name="red">#F44336</color>
+    <color name="purple">#673AB7</color>
+    <color name="gray">#FFAAAAAA</color>
+    <color name="transparent">#00AAAAAA</color>
+    <color name="gray_border">#3CAAAAAA</color>
+    <color name="default_gray">#737373</color>
+    <color name="purple_200">#D18066</color>
+    <color name="main">#F64F37</color>
+    <color name="bar">#FBB183</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#0000FF</color>
+    <color name="green">#00FF00</color>
+    <color name="orange">#FFA500</color>
+    <color name="year1">#D18066</color>
+    <color name="year2">#BF6C51</color>
+    <color name="year3">#9A5F4C</color>
+    <color name="year4">#B18374</color>
+</resources>

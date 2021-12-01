@@ -1,5 +1,29 @@
 <resources>
-    <string name="app_name">NCA-demo</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">SIS App</string>
+    <string name="student_information">Student Information</string>
+    <string name="logout">Logout</string>
+    <string name="results">Results</string>
+    <string name="result">Result</string>
+    <string name="no_results_yet">No results yet</string>
+    <string name="subject">Subject</string>
+    <string name="student_information_system">Student Information System</string>
+    <string name="lectures_this_day">Lectures this day</string>
+    <string name="nothing">Nothing</string>
+    <string name="welcome">Welcome, \</string>
+    <string name="lectures_tomorrow">Lectures tomorrow</string>
+    <string name="main">Main</string>
+    <string name="time_tables">Time tables</string>
+    <string name="assessments">Assessments</string>
+    <string name="me">Me</string>
+    <string name="events">Events</string>
+    <string name="event">Event</string>
+    <string name="fees">Fees</string>
+    <string name="gpa">GPA</string>
+    <string name="contact_us">Contact us</string>
+    <string name="enrollment">Enrollment</string>
+    <string name="final_exams">Final exams</string>
+    <string name="material">Material</string>
+    <string name="assignment">Assignment</string>
+    <string name="lesson_planning">Lesson Planning</string>
+    <string name="attendance">Attendance</string>
 </resources>

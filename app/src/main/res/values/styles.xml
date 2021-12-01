@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="customColorValue">@color/colorPrimaryMoreLight</item>
+        <item name="boxBackgroundColor">@color/colorPrimary</item>
+        <item name="android:windowSplashscreenContent">@android:color/white</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+
+        <item name="android:textViewStyle">@style/CairoTextViewStyle</item>
+        <item name="android:buttonStyle">@style/CairoButtonStyle</item>
+        <item name="android:editTextStyle">@style/CairoButtonStyle</item>
+        <item name="android:radioButtonStyle">@style/CairoRadioStyle</item>
+        // ripple
+<!--                <item name="colorControlHighlight">@color/colorPrimary</item>-->
+
+    </style>
+
+    <style name="CairoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/cairo_regular</item>
+    </style>
+
+    <style name="CairoButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">@font/cairo_regular</item>
+    </style>
+
+    <style name="CairoRadioStyle" parent="android:Widget.Holo.CompoundButton.RadioButton">
+        <item name="android:fontFamily">@font/cairo_regular</item>
+    </style>
+
+    <style name="CollapseBarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:fontFamily">@font/cairo_bold</item>
+    </style>
+
+</resources>

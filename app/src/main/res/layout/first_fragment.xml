@@ -1,0 +1,233 @@
+<?xml version="1.0"?>
+<androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scroll_view"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/expanded_menu"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/menu_btn"
+                    android:src="@drawable/ic_round_menu_24"
+                    android:layout_width="30dp"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    app:tint="?attr/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/welcome_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/cairo_bold"
+                    android:layout_toEndOf="@id/menu_btn"
+                    android:textSize="@dimen/text_medium"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:civ_border_width="0.5dp"
+                    app:civ_border_color="@color/default_gray"
+                    android:src="@drawable/ic_undraw_male_avatar_323b"
+                    android:layout_alignParentEnd="true"/>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="1dp"
+                android:background="@color/gray_border"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/gpa_layout"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingVertical="15dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_round_stars_24"
+                            app:tint="?colorPrimary" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="?colorPrimary"
+                            android:fontFamily="@font/cairo_bold"
+                            android:text="GPA"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/gpa_value_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cairo_bold"
+                        tools:text="2.14"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_border"/>
+
+                <LinearLayout
+                    android:id="@+id/fees_layout"
+                    android:background="?attr/selectableItemBackground"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingVertical="15dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_round_monetization_on_24"
+                            app:tint="?colorPrimary" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="?colorPrimary"
+                            android:fontFamily="@font/cairo_bold"
+                            android:text="Fees"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/fees_value_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cairo_bold"
+                        tools:text="500 EGP"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/today_lectures_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:fontFamily="@font/cairo_bold"
+                android:textColor="@android:color/white"
+                android:text="@string/lectures_this_day"
+                android:paddingHorizontal="20dp"
+                android:background="?attr/colorPrimary"/>
+
+            <ProgressBar
+                android:id="@+id/lectures_progress"
+                android:indeterminateTint="?attr/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="50dp"/>
+
+            <TextView
+                android:id="@+id/nothing_lectures_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nothing"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginVertical="50dp"/>
+
+            <com.example.nca_demo.Others.NonScrollListView
+                android:layout_width="match_parent"
+                android:padding="20dp"
+                android:dividerHeight="15dp"
+                android:listSelector="@android:color/transparent"
+                android:visibility="gone"
+                android:divider="@color/transparent"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_view"/>
+
+            <TextView
+                android:id="@+id/events_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/cairo_bold"
+                android:text="@string/events"
+                android:paddingHorizontal="20dp"
+                android:background="?attr/colorPrimary"/>
+
+            <ProgressBar
+                android:id="@+id/events_progress"
+                android:indeterminateTint="?attr/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="50dp"/>
+
+            <TextView
+                android:id="@+id/nothing_events_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nothing"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_marginVertical="50dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_view2"
+                android:layout_width="match_parent"
+                android:paddingVertical="20dp"
+                android:clipToPadding="false"
+                android:visibility="gone"
+                android:paddingHorizontal="20dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+
+        </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

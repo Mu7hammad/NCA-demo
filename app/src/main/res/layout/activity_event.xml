@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Screens.Event">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            app:elevation="0dp"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                app:elevation="0dp"
+                android:layout_height="wrap_content"
+                android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/event"
+                    android:textSize="@dimen/text_medium"
+                    android:textColor="@color/default_gray"
+                    android:fontFamily="@font/cairo_bold" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_border"/>
+        
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/ic_launcher"
+            android:scaleType="centerCrop"
+            android:id="@+id/event_img"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/cairo_bold"
+                android:id="@+id/event_title"
+                android:gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:textSize="@dimen/text_x_x_large"
+                android:textColor="@android:color/black"
+                tools:text="Event title"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="end"
+                android:id="@+id/event_date"
+                android:textSize="@dimen/text_small"
+                tools:text="15 / 02 / 2022"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="@dimen/text_medium"
+            android:id="@+id/event_description"
+            android:layout_marginVertical="10dp"
+            android:layout_height="wrap_content"
+            tools:text="description text description text description text description text description textdescription textdescription textdescription textdescription textdescription textdescription text description text description text"/>
+
+    </LinearLayout>
+
+</ScrollView>

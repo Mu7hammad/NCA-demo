@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/material" android:icon="@drawable/ic_round_menu_book_24" android:id="@+id/first_nav"/>
+    <item android:title="@string/assignment" android:icon="@drawable/ic_round_assignment_24" android:id="@+id/second_nav"/>
+    <item android:title="@string/lesson_planning" android:icon="@drawable/ic_round_directions_walk_24" android:id="@+id/third_nav"/>
+
+</menu>

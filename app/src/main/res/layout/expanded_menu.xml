@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/menu_lin"
+    android:visibility="gone"
+    android:layout_below="@id/menu_btn"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item1_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:padding="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:src="@drawable/ic_round_menu_book_24"
+            android:layout_width="30dp"
+            android:layout_gravity="center"
+            android:padding="3dp"
+            android:layout_height="30dp"
+            app:tint="@color/default_gray" />
+
+        <TextView
+            android:id="@+id/item1_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_small"
+            android:layout_marginHorizontal="20dp"
+            android:layout_gravity="center"
+            android:text="@string/enrollment"
+            android:textColor="@color/default_gray"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_border"/>
+
+        <LinearLayout
+            android:id="@+id/item2_lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:padding="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:src="@drawable/ic_round_assignment_24"
+                android:layout_width="30dp"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:layout_height="30dp"
+                app:tint="@color/default_gray" />
+
+            <TextView
+                android:id="@+id/item2_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_small"
+                android:layout_marginHorizontal="20dp"
+                android:layout_gravity="center"
+                android:text="@string/results"
+                android:textColor="@color/default_gray"/>
+
+        </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_border"/>
+
+    <LinearLayout
+        android:id="@+id/item3_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:padding="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:src="@drawable/ic_round_call_24"
+            android:layout_width="30dp"
+            android:layout_gravity="center"
+            android:padding="3dp"
+            android:layout_height="30dp"
+            app:tint="@color/default_gray" />
+
+        <TextView
+            android:id="@+id/item3_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_small"
+            android:layout_marginHorizontal="20dp"
+            android:layout_gravity="center"
+            android:text="@string/contact_us"
+            android:textColor="@color/default_gray"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_border"/>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingVertical="20dp"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                app:civ_border_width="0.5dp"
+                app:civ_border_color="@color/default_gray"
+                android:src="@drawable/ic_undraw_male_avatar_323b"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/username_tv"
+                android:textSize="@dimen/text_large"
+                android:textColor="?attr/colorPrimary"
+                android:fontFamily="@font/cairo_bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:alpha="0.3"
+                android:background="@color/gray"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/cairo_bold"
+                android:layout_marginHorizontal="20dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_small"
+                android:text="@string/student_information"
+                android:layout_gravity="start"/>
+
+            <com.example.nca_demo.Others.NonScrollListView
+                android:id="@+id/list_view"
+                android:background="@drawable/box_decoration"
+                android:layout_marginHorizontal="20dp"
+                android:dividerHeight="1dp"
+                android:listSelector="@android:color/transparent"
+                android:divider="?attr/customColorValue"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/logout_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="@color/red"
+                android:background="@drawable/empty_box_decoration"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_logout_black_24dp"
+                    app:tint="@color/red" />
+
+                <View
+                    android:layout_width="5dp"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/red"
+                    android:fontFamily="@font/cairo_bold"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/text_small"
+                    android:text="@string/logout"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

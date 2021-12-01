@@ -1,4 +1,4 @@
-package com.example.nca_demo.Activity;
+package com.example.nca_demo.Screens;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import com.example.nca_demo.R;
 
-public class RegisterActivity extends AppCompatActivity {
+public class Register extends AppCompatActivity {
 
     private TextView tv_to_login;
 
@@ -24,7 +24,7 @@ public class RegisterActivity extends AppCompatActivity {
         tv_to_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
+                startActivity(new Intent(Register.this, Login.class));
             }
         });
 
