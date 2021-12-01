@@ -9,4 +9,12 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#0000FF</color>
     <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="orange">#FFA500</color>
+
+    <color name="year1">#D18066</color>
+    <color name="year2">#BF6C51</color>
+    <color name="year3">#9A5F4C</color>
+    <color name="year4">#B18374</color>
+
 </resources>

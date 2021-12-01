@@ -13,6 +13,18 @@
         android:theme="@style/Theme.NCAdemo"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Years.FourthYearActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Years.ThirdYearActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Years.SecondYearActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Years.FirstYearActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.RegisterActivity"
             android:exported="false" />
         <activity
@@ -30,6 +42,10 @@
         <activity
             android:name=".Activity.MainActivity"
             android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
