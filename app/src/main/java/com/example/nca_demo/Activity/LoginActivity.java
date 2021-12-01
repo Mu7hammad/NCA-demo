@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.nca_demo.MainActivity;
 import com.example.nca_demo.R;
 import com.sdsmdg.tastytoast.TastyToast;
 

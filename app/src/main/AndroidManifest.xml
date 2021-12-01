@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.nca_demo">
 
-    <uses-permission android:name="android.permission.INTERNET " />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,18 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NCAdemo"
         android:usesCleartextTraffic="true">
-        <activity
-            android:name=".Years.FourthYearActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Years.ThirdYearActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Years.SecondYearActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Years.FirstYearActivity"
-            android:exported="false" />
         <activity
             android:name=".Activity.RegisterActivity"
             android:exported="false" />
@@ -39,13 +25,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Activity.MainActivity"
-            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
+    <uses-permission android:name="android.permission.INTERNET " />
 
 </manifest>
